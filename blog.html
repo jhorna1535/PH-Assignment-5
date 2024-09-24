@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Quest-Build-and-Manipulate</title>
+
+    <!-- Lexend Google Font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- daisyUI cdn -link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- font awesome cdn-link -->
+       <script src="https://kit.fontawesome.com/852dbc555e.js" crossorigin="anonymous"></script>
+
+    <!--  tailwind  -script -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary : '#B4F461',
+                    },
+                    fontFamily : {
+                        Lexend :'Lexend', 
+                    },
+                },
+            },
+        }
+    </script>
+
+</head>
+
+<body class="font-Lexend mx-auto scroll-smooth">
+
+<!---------- Header Section Start --------->
+    <header class="sticky top-0 bg-white pb-1">
+
+<!----------- NavBar Start---------->
+        <nav class="flex justify-around items-center mx-2 px-0 py-6 relative bg-[#F9F7F3]">
+
+<!-- nav-start-part -->
+            <div>
+                <a href="index.html">
+                    <button id="btn-blog-q" class="btn btn-primary bg-primary text-black border-primary hover:border-primary hover:text-primary hover:bg-transparent">Home</button>
+                </a>
+
+                
+            </div>
+
+<!-- nav-middle-part -->
+
+            <div class="flex items-center justify-center">
+                <img class=" w-8 h-8" src="./assets/logo.png" alt="logo">
+                <h3 class="text-md font-bold">&nbsp;&nbsp;Donate Bangladesh</h3>
+            </div>
+
+<!-- nav-end-part -->
+
+            <div class="flex items-center justify-center ">
+                <img src="./assets/coin.png" alt="coin">
+                &nbsp;
+                <h4 id="balance">5900.00</h4>
+                <h4>&nbsp;BDT</h4>
+            </div>
+
+        </nav>
+
+<!----------- NavBar End---------->
+
+    </header>
+<!---------- Header Section end --------->
+
+<!---------- Blog section Start --------->
+    <main class="w-11/12 m-auto mt-8 space-y-4">
+        <h1 class="text-black text-5xl font-bold">
+            Important FAQ <span><i class="fa-solid fa-question text-5xl"></i></span>
+          </h1>
+    
+  <!---- Q. No.- 01 ---->
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="answer" checked="checked" />
+              <div class="collapse-title text-black text-xl font-bold">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p class="text-gray-600 font-medium">
+                    The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.
+                  </p>
+                </div>
+          </div>
+
+  <!---- Q. No.- 02 ---->    
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="answer" />
+              <div class="collapse-title text-black text-xl font-bold">How do you selected an element form the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-gray-600 font-medium">
+                    Use an ID to Select an Element with .getElementById()
+                    Use a CSS Selector to Select an Element with .querySelector()
+                    Use a CSS Selector to Select Multiple Elements with .querySelectorAll()
+                  </p>
+                </div>
+          </div>
+
+  <!---- Q. No.- 03 ---->    
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="answer" />
+              <div class="collapse-title text-black text-xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p class="text-gray-600 font-medium">
+                    Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element.
+                  </p>
+                </div>
+          </div>
+
+  <!---- Q. No.- 04 ---->    
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="answer" />
+              <div class="collapse-title text-black text-xl font-bold">How do you manipulate an element`s attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  
+                  <ul>
+                    <li class="text-gray-600 font-medium">
+                      1. Manipulating Attributes:
+                      The setAttribute, getAttribute, and removeAttribute methods allow you to manipulate an element's attributes (such as id, href, src, etc.).
+                    </li>
+                    <li class="text-gray-600 font-medium">
+                      2. Manipulating Styles:
+                      You can modify an element's styles either by directly manipulating its style property or by using classList to add or remove CSS classes.
+                    </li>
+                  </ul>
+                </div>
+          </div>
+
+    </main>
+
+<!------ JS Link ------>
+    <script src="./js/blog.js"></script>
+</body>
+</html>
